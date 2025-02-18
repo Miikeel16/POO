@@ -12,7 +12,7 @@ public class Reloj {
     }
 
     public String toString() {
-        return String.format("%02d:%02d:%02d", horas, minutos, segundos);
+        return (horas+":"+minutos+":"+segundos);
     }
 
     public int enSegundos() {

@@ -1,4 +1,3 @@
-package POO.EJ1JAVA;
 
 import java.time.LocalTime;
 
