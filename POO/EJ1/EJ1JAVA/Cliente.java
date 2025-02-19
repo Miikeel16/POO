@@ -1,4 +1,4 @@
-package POO.EJ1JAVA;
+package POO.EJ1.EJ1JAVA;
 
 import java.util.Date;
 

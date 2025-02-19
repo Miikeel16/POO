@@ -1,26 +1,18 @@
-package POO.EJ1JAVA;
+package POO.EJ1.EJ1JAVA;
 
-public class pruebasReloj {
+public class Main {
         public static void main(String[] args) throws InterruptedException {
             // Crear objetos
             Reloj reloj1 = new Reloj (59,59,22);
-            System.out.println(reloj1);
-            System.out.println(reloj1.enSegundos());
+            System.out.println("Hora: "+reloj1);
+            System.out.println("Hora en segundos: "+reloj1.enSegundos());
             reloj1.sumaSegundos();
-            System.out.println(reloj1);
+            System.out.println("Hora mas un segundo: "+reloj1);
             reloj1.sumaMinutos();
-            System.out.println(reloj1);
+            System.out.println("Hora mas un minuto: "+reloj1);
             reloj1.sumaHoras();
-            System.out.println(reloj1);
-            System.out.println(reloj1.crearHoraConSegundos(150050));
-            System.out.println(reloj1);
-            System.out.println(reloj1.crearHoraConSegundos(86385));
-            System.out.println(reloj1);
-
-            for (int i = 1 ; i < 20 ; i++ ){
-                Thread.sleep(1000);
-                reloj1.sumaSegundos();
-                System.out.println(reloj1);
-            }
+            System.out.println("Hora mas una hora: "+reloj1);
+            reloj1.crearHoraConSegundos(150055);
+            System.out.println("Hora con segundos introducidos: "+reloj1);
         }
     }

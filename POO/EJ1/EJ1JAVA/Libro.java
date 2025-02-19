@@ -1,4 +1,4 @@
-package POO.EJ1JAVA;
+package POO.EJ1.EJ1JAVA;
 
 public class Libro {
     private String titulo;
@@ -29,7 +29,7 @@ public class Libro {
         return this.anioPublicacion;
     }
 
-    public void setAnioPublicacion(int anioPublicacion) {
+    public void setAnioPublicacion(int panioPublicacion) {
         this.anioPublicacion = panioPublicacion;
     }
 
@@ -37,7 +37,7 @@ public class Libro {
         return this.numeroPaginas;
     }
 
-    public void setNumeroPaginas(int numeroPaginas) {
+    public void setNumeroPaginas(int pnumeroPaginas) {
         this.numeroPaginas = pnumeroPaginas;
     }
 
@@ -45,7 +45,7 @@ public class Libro {
         return this.genero;
     }
 
-    public void setGenero(Genero genero) {
+    public void setGenero(Genero pgenero) {
         this.genero = pgenero;
     }
 
@@ -54,7 +54,7 @@ public class Libro {
     }
     
 
-    public void setSinopsis(String sinopsis) {
+    public void setSinopsis(String psinopsis) {
         this.sinopsis = psinopsis;
     }
 
@@ -62,7 +62,7 @@ public class Libro {
         return this.autora;
     }
 
-    public void setAutora(Autora autora) {
+    public void setAutora(Autora pautora) {
         this.autora = pautora;
     }
 }
