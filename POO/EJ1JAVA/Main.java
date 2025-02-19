@@ -1,25 +1,26 @@
 package POO.EJ1JAVA;
-import java.time.LocalTime;
 
-public class Main {
-    public static void main(String[] args) {
-        LocalTime ahora = LocalTime.now();
-        int horas = ahora.getHour();
-        int minutos = ahora.getMinute();
-        int segundos = ahora.getSecond();
+public class pruebasReloj {
+        public static void main(String[] args) throws InterruptedException {
+            // Crear objetos
+            Reloj reloj1 = new Reloj (59,59,22);
+            System.out.println(reloj1);
+            System.out.println(reloj1.enSegundos());
+            reloj1.sumaSegundos();
+            System.out.println(reloj1);
+            reloj1.sumaMinutos();
+            System.out.println(reloj1);
+            reloj1.sumaHoras();
+            System.out.println(reloj1);
+            System.out.println(reloj1.crearHoraConSegundos(150050));
+            System.out.println(reloj1);
+            System.out.println(reloj1.crearHoraConSegundos(86385));
+            System.out.println(reloj1);
 
-
-        Reloj reloj = new Reloj(horas, minutos, segundos);
-
-        System.out.println("Hora actual del sistema: " + reloj.toString());
-
-        reloj.sumaSegundos();
-        System.out.println("Después de sumar 1 segundo: " + reloj.toString());
-
-        reloj.sumaMinutos();
-        System.out.println("Después de sumar 1 minuto: " + reloj.toString());
-
-        reloj.sumaHoras();
-        System.out.println("Después de sumar 1 hora: " + reloj.toString());
+            for (int i = 1 ; i < 20 ; i++ ){
+                Thread.sleep(1000);
+                reloj1.sumaSegundos();
+                System.out.println(reloj1);
+            }
+        }
     }
-}

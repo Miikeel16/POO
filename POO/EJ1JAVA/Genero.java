@@ -4,24 +4,24 @@ public class Genero {
     private String nombre;
     private int edadMinimaRecomendada;
 
-    public Genero(String nombre, int edadMinimaRecomendada) {
-        this.nombre = nombre;
-        this.edadMinimaRecomendada = edadMinimaRecomendada;
+    public Genero(String pnombre, int pedadMinimaRecomendada) {
+        this.nombre = pnombre;
+        this.edadMinimaRecomendada = pedadMinimaRecomendada;
     }
 
     public String getNombre() {
-        return nombre;
+        return this.nombre;
     }
 
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
+    public void setNombre(String pnombre) {
+        this.nombre = pnombre;
     }
 
     public int getEdadMinimaRecomendada() {
-        return edadMinimaRecomendada;
+        return this.edadMinimaRecomendada;
     }
 
-    public void setEdadMinimaRecomendada(int edadMinimaRecomendada) {
-        this.edadMinimaRecomendada = edadMinimaRecomendada;
+    public void setEdadMinimaRecomendada(int pedadMinimaRecomendada) {
+        this.edadMinimaRecomendada = pedadMinimaRecomendada;
     }
 }

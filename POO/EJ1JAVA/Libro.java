@@ -8,61 +8,61 @@ public class Libro {
     private String sinopsis;
     private Autora autora;
 
-    public Libro(String titulo, int anioPublicacion, int numeroPaginas, Genero genero, String sinopsis, Autora autora) {
-        this.titulo = titulo;
-        this.anioPublicacion = anioPublicacion;
-        this.numeroPaginas = numeroPaginas;
-        this.genero = genero;
-        this.sinopsis = sinopsis;
-        this.autora = autora;
+    public Libro(String ptitulo, int panioPublicacion, int pnumeroPaginas, Genero pgenero, String psinopsis, Autora pautora) {
+        this.titulo = ptitulo;
+        this.anioPublicacion = panioPublicacion;
+        this.numeroPaginas = pnumeroPaginas;
+        this.genero = pgenero;
+        this.sinopsis = psinopsis;
+        this.autora = pautora;
     }
 
     public String getTitulo() {
-        return titulo;
+        return this.titulo;
     }
 
-    public void setTitulo(String titulo) {
-        this.titulo = titulo;
+    public void setTitulo(String ptitulo) {
+        this.titulo = ptitulo;
     }
 
     public int getAnioPublicacion() {
-        return anioPublicacion;
+        return this.anioPublicacion;
     }
 
     public void setAnioPublicacion(int anioPublicacion) {
-        this.anioPublicacion = anioPublicacion;
+        this.anioPublicacion = panioPublicacion;
     }
 
     public int getNumeroPaginas() {
-        return numeroPaginas;
+        return this.numeroPaginas;
     }
 
     public void setNumeroPaginas(int numeroPaginas) {
-        this.numeroPaginas = numeroPaginas;
+        this.numeroPaginas = pnumeroPaginas;
     }
 
     public Genero getGenero() {
-        return genero;
+        return this.genero;
     }
 
     public void setGenero(Genero genero) {
-        this.genero = genero;
+        this.genero = pgenero;
     }
 
     public String getSinopsis() {
-        return sinopsis;
+        return this.sinopsis;
     }
     
 
     public void setSinopsis(String sinopsis) {
-        this.sinopsis = sinopsis;
+        this.sinopsis = psinopsis;
     }
 
     public Autora getAutora() {
-        return autora;
+        return this.autora;
     }
 
     public void setAutora(Autora autora) {
-        this.autora = autora;
+        this.autora = pautora;
     }
 }

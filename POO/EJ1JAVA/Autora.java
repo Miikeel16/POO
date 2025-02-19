@@ -4,24 +4,24 @@ public class Autora {
     private String nombre;
     private String apellidos;
 
-    public Autora(String nombre, String apellidos) {
-        this.nombre = nombre;
-        this.apellidos = apellidos;
+    public Autora(String pnombre, String papellidos) {
+        this.nombre = pnombre;
+        this.apellidos = papellidos;
     }
 
     public String getNombre() {
-        return nombre;
+        return this.nombre;
     }
 
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
+    public void setNombre(String pnombre) {
+        this.nombre = pnombre;
     }
 
     public String getApellidos() {
-        return apellidos;
+        return this.apellidos;
     }
 
-    public void setApellidos(String apellidos) {
-        this.apellidos = apellidos;
+    public void setApellidos(String papellidos) {
+        this.apellidos = papellidos;
     }
 }

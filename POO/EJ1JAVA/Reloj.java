@@ -1,40 +1,75 @@
 package POO.EJ1JAVA;
 
 public class Reloj {
-    private int horas;
-    private int minutos;
+    /*
+    Cread los siguientes atributos  
+    hora.
+    minutos.
+    segundos.*/
+
+    //Método constructor
+
     private int segundos;
+    private int minutos;
+    private int horas;
 
-    public Reloj(int horas, int minutos, int segundos) {
-        this.horas = horas;
-        this.minutos = minutos;
-        this.segundos = segundos;
+    public Reloj(int psegundos, int pminutos, int phora){
+        this.segundos = psegundos;
+        this.minutos = pminutos;
+        this.horas = phora;
     }
 
-    public String toString() {
-        return (horas+":"+minutos+":"+segundos);
+    public String toString(){
+        return horas + ":" + minutos + ":" + segundos;
     }
 
-    public int enSegundos() {
-        return horas * 3600 + minutos * 60 + segundos;
+    public int enSegundos(){
+        return (horas * 3600) + (minutos * 60) + segundos;
     }
 
-    public void crearHoraConSegundos(int segundosTotales) {
-        this.horas = (segundosTotales / 3600) % 24;
-        segundosTotales %= 3600;
-        this.minutos = segundosTotales / 60;
-        this.segundos = segundosTotales % 60;
+    public String crearHoraConSegundos(int phora){
+        horas = phora / 3600;
+        phora = phora % 3600;
+        minutos = phora / 60;
+        segundos = phora % 60;
+        if (segundos >= 60){
+            segundos = segundos - 60;
+            sumaMinutos();
+        }
+        if (minutos >= 60){
+            minutos = minutos - 60;
+            sumaHoras();
+        }
+        if (horas >= 24){
+            horas = horas - 24;
+        }
+        return horas + " hora/s " +minutos+ " minuto/s " + segundos + " segundo/s";
     }
 
-    public void sumaSegundos() {
-        crearHoraConSegundos(enSegundos() + 1);
+    public void sumaSegundos(){
+        segundos++;
+        if (segundos >= 60){
+            segundos = segundos - 60;
+            sumaMinutos();
+        }
     }
 
-    public void sumaMinutos() {
-        crearHoraConSegundos(enSegundos() + 60);
+    public void sumaMinutos(){
+        minutos++;
+        if (minutos >= 60){
+            minutos = minutos - 60;
+            sumaHoras();
+        }
     }
 
-    public void sumaHoras() {
-        crearHoraConSegundos(enSegundos() + 3600);
+    public void sumaHoras(){
+        horas++;
+        if (horas >= 24){
+            horas = horas - 24;
+        }
     }
+
+    // Getters y setters
+
+    //Los otros métodos
 }

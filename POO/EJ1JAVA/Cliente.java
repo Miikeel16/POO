@@ -10,60 +10,60 @@ public class Cliente {
     private Date fechaNacimiento;
     private Libro ultimoLibroComprado;
 
-    public Cliente(String nombre, String apellidos, String dni, String email, Date fechaNacimiento, Libro ultimoLibroComprado) {
-        this.nombre = nombre;
-        this.apellidos = apellidos;
-        this.dni = dni;
-        this.email = email;
-        this.fechaNacimiento = fechaNacimiento;
-        this.ultimoLibroComprado = ultimoLibroComprado;
+    public Cliente(String pnombre, String papellidos, String pdni, String pemail, Date pfechaNacimiento, Libro pultimoLibroComprado) {
+        this.nombre = pnombre;
+        this.apellidos = papellidos;
+        this.dni = pdni;
+        this.email = pemail;
+        this.fechaNacimiento = pfechaNacimiento;
+        this.ultimoLibroComprado = pultimoLibroComprado;
     }
 
     public String getNombre() {
-        return nombre;
+        return this.nombre;
     }
 
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
+    public void setNombre(String pnombre) {
+        this.nombre = pnombre;
     }
 
     public String getApellidos() {
-        return apellidos;
+        return this.apellidos;
     }
 
-    public void setApellidos(String apellidos) {
-        this.apellidos = apellidos;
+    public void setApellidos(String papellidos) {
+        this.apellidos = papellidos;
     }
 
     public String getDni() {
-        return dni;
+        return this.dni;
     }
 
-    public void setDni(String dni) {
-        this.dni = dni;
+    public void setDni(String pdni) {
+        this.dni = pdni;
     }
 
     public String getEmail() {
-        return email;
+        return this.email;
     }
 
-    public void setEmail(String email) {
-        this.email = email;
+    public void setEmail(String pemail) {
+        this.email = pemail;
     }
 
     public Date getFechaNacimiento() {
-        return fechaNacimiento;
+        return this.fechaNacimiento;
     }
 
-    public void setFechaNacimiento(Date fechaNacimiento) {
-        this.fechaNacimiento = fechaNacimiento;
+    public void setFechaNacimiento(Date pfechaNacimiento) {
+        this.fechaNacimiento = pfechaNacimiento;
     }
 
     public Libro getUltimoLibroComprado() {
-        return ultimoLibroComprado;
+        return this.ultimoLibroComprado;
     }
 
-    public void setUltimoLibroComprado(Libro ultimoLibroComprado) {
-        this.ultimoLibroComprado = ultimoLibroComprado;
+    public void setUltimoLibroComprado(Libro pultimoLibroComprado) {
+        this.ultimoLibroComprado = pultimoLibroComprado;
     }
 }
