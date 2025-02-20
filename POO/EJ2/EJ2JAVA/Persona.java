@@ -12,7 +12,7 @@ public class Persona{
     private static final int pesoBajo=-1;
 
     //////CONSTRUCTOR POR DEFECTO//////
-    public Persona(String psexo){
+    public Persona(){
         this.nombre="Mikel";
         this.edad=18;
         this.dni=generaDNI();
