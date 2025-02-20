@@ -30,5 +30,16 @@ public class Main{
         persona3.setPeso(70);
         persona3.setAltura(181);
 
+        
+        int imc = Persona.calcularIMC();
+        if (imc == -1){
+        System.out.println("Esta por debajo de su peso ideal");
+        }
+        else if (imc == 0){
+        System.out.println("Está en su peso ideal.");
+        }
+        else {
+        System.out.println("Tiene sobrepeso.");
+        }
     }
 }
