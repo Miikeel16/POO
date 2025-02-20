@@ -43,76 +43,78 @@ public class Persona{
             Random random = new Random();
             int numero = random.nextInt(90000000);
             int letra=numero%23;
-            if (letra==0) {
-                System.out.println("T");
+            char letraDni = 0;
+            if (letra == 0) {
+                letraDni = 'T';
             }
-            if (letra==1) {
-                System.out.println("R");
+            if (letra == 1) {
+                letraDni = 'R';
             }
-            if (letra==2) {
-                System.out.println("W");
+            if (letra == 2) {
+                letraDni = 'W';
             }
-            if (letra==3) {
-                System.out.println("A");
+            if (letra == 3) {
+                letraDni = 'A';
             }
-            if (letra==4) {
-                System.out.println("G");
+            if (letra == 4) {
+                letraDni = 'G';
             }
-            if (letra==5) {
-                System.out.println("M");
+            if (letra == 5) {
+                letraDni = 'M';
             }
-            if (letra==6) {
-                System.out.println("Y");
+            if (letra == 6) {
+                letraDni = 'Y';
             }
-            if (letra==7) {
-                System.out.println("F");
+            if (letra == 7) {
+                letraDni = 'F';
             }
-            if (letra==8) {
-                System.out.println("P");
+            if (letra == 8) {
+                letraDni = 'P';
             }
-            if (letra==9) {
-                System.out.println("D");
+            if (letra == 9) {
+                letraDni = 'D';
             }
-            if (letra==10) {
-                System.out.println("X");
+            if (letra == 10) {
+                letraDni = 'X';
             }
-            if (letra==11) {
-                System.out.println("B");
+            if (letra == 11) {
+                letraDni = 'B';
             }
-            if (letra==12) {
-                System.out.println("N");
+            if (letra == 12) {
+                letraDni = 'N';
             }
-            if (letra==13) {
-                System.out.println("J");
+            if (letra == 13) {
+                letraDni = 'J';
             }
-            if (letra==14) {
-                System.out.println("Z");
+            if (letra == 14) {
+                letraDni = 'Z';
             }
-            if (letra==15) {
-                System.out.println("S");
+            if (letra == 15) {
+                letraDni = 'S';
             }
-            if (letra==16) {
-                System.out.println("Q");
+            if (letra == 16) {
+                letraDni = 'Q';
             }
-            if (letra==17) {
-                System.out.println("V");
+            if (letra == 17) {
+                letraDni = 'V';
             }
-            if (letra==18) {
-                System.out.println("H");
+            if (letra == 18) {
+                letraDni = 'H';
             }
-            if (letra==19) {
-                System.out.println("L");
+            if (letra == 19) {
+                letraDni = 'L';
             }
-            if (letra==20) {
-                System.out.println("C");
+            if (letra == 20) {
+                letraDni = 'C';
             }
-            if (letra==21) {
-                System.out.println("K");
+            if (letra == 21) {
+                letraDni = 'K';
             }
-            if (letra==22) {
-                System.out.println("E");
+            if (letra == 22) {
+                letraDni = 'E';
             }
-        String pdni=numero+""+letra;
+
+        String pdni=numero+""+letraDni;
         return pdni;
     }
     private String comprobarSexo(String psexo){
