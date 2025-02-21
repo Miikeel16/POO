@@ -16,7 +16,7 @@ public class Main{
         double ppeso = teclado.nextDouble();
         teclado.nextLine();
         System.out.println("Dime tu altura: ");
-        double paltura = teclado.nextDouble();
+        int paltura = teclado.nextInt();
 
         ////////OBJETOS//////
         Persona persona1 = new Persona(pnombre, pedad, psexo, ppeso, paltura);
@@ -29,6 +29,10 @@ public class Main{
         persona3.setSexo("H");
         persona3.setPeso(70);
         persona3.setAltura(181);
+
+        System.out.println(persona1.calcularIMC(ppeso, paltura));
+        System.out.println(persona2.calcularIMC(ppeso, paltura));
+        System.out.println(persona3.calcularIMC(ppeso, paltura));
 
     }
 }

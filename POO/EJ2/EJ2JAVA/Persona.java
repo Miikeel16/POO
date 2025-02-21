@@ -6,7 +6,7 @@ public class Persona{
     private String dni;
     private String sexo;
     private double peso;
-    private double altura;
+    private int altura;
     private static final int sobrePeso=1;
     private static final int pesoIdeal=0;
     private static final int pesoBajo=-1;
@@ -27,10 +27,10 @@ public class Persona{
         this.dni=generaDNI();
         this.sexo=comprobarSexo(psexo);
         this.peso=0.0;
-        this.altura=0.0;
+        this.altura=0;
     }
     /////CONSTRUCTOR CON TODOS LOS ATRIBUTOS//////
-    public Persona(String pnombre, int pedad, String psexo, double ppeso, double paltura){
+    public Persona(String pnombre, int pedad, String psexo, double ppeso, int paltura){
         this.nombre=pnombre;
         this.edad=pedad;
         this.dni=generaDNI();
@@ -118,14 +118,13 @@ public class Persona{
         return pdni;
     }
     private String comprobarSexo(String psexo){
-        if (psexo == "M" || psexo == "H" || psexo == "NB" ){
-            return psexo;
-        }else{
-            psexo="M";
-            return psexo;
-        }
-    
+
+        if (psexo != null && (psexo.equals("M") || psexo.equals("H") || psexo.equals("NB"))) {
+        return psexo;
+        } 
+        return "M"; 
     }
+
     public boolean esMayorDeEdad(int pedad){
         if (pedad>=18){
             return true;
@@ -133,7 +132,7 @@ public class Persona{
             return false;
         }
     }
-    public int calcularIMC(double ppeso, double paltura){
+    public int calcularIMC(double ppeso, int paltura){
         double imc = ppeso / (paltura*paltura);
         if(paltura<=0){
             return this.sobrePeso;
@@ -147,7 +146,7 @@ public class Persona{
     }
     ////////////TOSTRING////////////////
     public String toString(){
-        return "Nombre: "+nombre+" Edad: "+edad+" DNI: "+dni+" Sexo: "+sexo+" Peso: "+peso+" Altura: "+altura+" m";
+        return "Nombre: "+nombre+", Edad: "+edad+" DNI: "+dni+", Sexo: "+sexo+", Peso: "+peso+" kg, Altura: "+altura+" cm";
     }
     /////////////////CLONE////////////////
     public Persona clone(){
@@ -178,10 +177,10 @@ public class Persona{
     public double getPeso(){
         return this.peso;
     }
-    public void setAltura(double paltura){
+    public void setAltura(int paltura){
         this.altura=paltura;
     }
-    public double getAltura(){
+    public int getAltura(){
         return this.altura;
     }
      public void setDni(String pdni){
