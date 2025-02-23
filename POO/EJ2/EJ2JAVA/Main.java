@@ -30,27 +30,9 @@ public class Main{
         persona3.setPeso(70);
         persona3.setAltura(181);
 
-        String imc="";
-        if (persona1.calcularIMC(ppeso, paltura) == -1) {
-            imc="Peso Bajo";
-        }else if (persona1.calcularIMC(ppeso, paltura) == 0) {
-            imc="Peso Ideal";
-        }else{
-            imc="Sobrepeso";
-        }
-
-        String imc2="";
-        if (persona3.calcularIMC(ppeso, paltura) == -1) {
-            imc2="Peso Bajo";
-        }else if (persona3.calcularIMC(ppeso, paltura) == 0) {
-            imc2="Peso Ideal";
-        }else{
-            imc2="Sobrepeso";
-        }
-
-        System.out.println(persona1+" IMC: "+imc);
+        System.out.println(persona1+" IMC: "+persona1.calcularIMC(ppeso, paltura)+", Mayor de edad: "+persona1.esMayorDeEdad(pedad));
         System.out.println(persona2);
-        System.out.println(persona3+" IMC: "+imc2);
+        System.out.println(persona3+" IMC: "+persona3.calcularIMC(ppeso, paltura)+", Mayor de edad: "+persona3.esMayorDeEdad(pedad));
 
     }
 }
