@@ -133,20 +133,24 @@ public class Persona{
         }
     }
     public int calcularIMC(double ppeso, int paltura){
-        double imc = ppeso / (paltura*paltura);
-        if(paltura<=0){
+        if (paltura <= 0) {
             return this.sobrePeso;
-        }else  if (imc < 18) {
+        }
+    
+        double alt = paltura / 100.0;
+        double imc = ppeso / (alt * alt);
+    
+        if (imc < 18) {
             return this.pesoBajo;
-        }else if (imc < 25 ) {
+        } else if (imc < 25) {
             return this.pesoIdeal;
-        }else{
+        } else {
             return this.sobrePeso;
         }
     }
     ////////////TOSTRING////////////////
     public String toString(){
-        return "Nombre: "+nombre+", Edad: "+edad+" DNI: "+dni+", Sexo: "+sexo+", Peso: "+peso+" kg, Altura: "+altura+" cm";
+        return "Nombre: "+nombre+", Edad: "+edad+" DNI: "+dni+", Sexo: "+sexo+", Peso: "+peso+"kg, Altura: "+altura+"cm";
     }
     /////////////////CLONE////////////////
     public Persona clone(){
