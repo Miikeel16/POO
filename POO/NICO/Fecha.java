@@ -1,5 +1,7 @@
 package POO.NICO;
 
+import java.util.Calendar;
+
 public class Fecha{
     private int d,m,a;
 
@@ -30,7 +32,13 @@ public void setFecha(int pD, int pM, int pA){
    m=pM; 
    a=pA;
    }
-   public void mostrarFecha(){
+public void mostrarFecha(){
     IO.SOP("Hoy es: "+this.d+"-"+this.m+"-"+this.a);
    }
+Calendar cal = Calendar.getInstance();
+public void setNow(){
+        this.d = cal.get(Calendar.DAY_OF_MONTH);
+        this.m = cal.get(Calendar.MONTH) +1;
+        this.a = cal.get(Calendar.YEAR);
+    }
 }

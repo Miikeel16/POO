@@ -11,5 +11,10 @@ public class Main{
         f2.mostrarFecha();
         f3.mostrarFecha();
         f4.mostrarFecha();
+
+        Fecha hoy = new Fecha();
+
+        hoy.setNow();
+        hoy.mostrarFecha();
     }
 }
