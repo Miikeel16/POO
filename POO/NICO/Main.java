@@ -8,6 +8,9 @@ public class Main{
         Fecha f4 = new Fecha(12,2024);
 
         f1.mostrarFecha();
+        f1.next();
+        f1.mostrarFecha();
+        
         f2.mostrarFecha();
         f3.mostrarFecha();
         f4.mostrarFecha();

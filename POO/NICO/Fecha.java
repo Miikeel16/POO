@@ -1,5 +1,6 @@
 package POO.NICO;
 
+import java.lang.classfile.instruction.ThrowInstruction;
 import java.util.Calendar;
 
 public class Fecha{
@@ -41,4 +42,15 @@ public void setNow(){
         this.m = cal.get(Calendar.MONTH) +1;
         this.a = cal.get(Calendar.YEAR);
     }
+public void next(){
+    this.d=this.d+1;
+    if (this.d>=30){
+        this.m=this.d /30;
+        this.d = this.d % 30;
+    }
+    if (this.m >= 12){
+        this.a = this.a /12;
+        this.m = this.m %12;
+    }
+}
 }
