@@ -44,13 +44,5 @@ public void setNow(){
     }
 public void next(){
     this.d=this.d+1;
-    if (this.d>=30){
-        this.m=this.d /30;
-        this.d = this.d % 30;
-    }
-    if (this.m >= 12){
-        this.a = this.a /12;
-        this.m = this.m %12;
-    }
 }
 }
