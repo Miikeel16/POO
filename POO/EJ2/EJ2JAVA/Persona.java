@@ -125,20 +125,20 @@ public class Persona{
         return "M"; 
     }
 
-    public boolean esMayorDeEdad(int pedad){
-        if (pedad>=18){
+    public boolean esMayorDeEdad(){
+        if (this.edad>=18){
             return true;
         }else{
             return false;
         }
     }
-    public int calcularIMC(double ppeso, int paltura){
-        if (paltura <= 0) {
+    public int calcularIMC(){
+        if (this.altura <= 0) {
             return this.sobrePeso;
         }
     
-        double alt = paltura / 100.0;
-        double imc = ppeso / (alt * alt);
+        double alt = this.altura / 100.0;
+        double imc = this.peso / (alt * alt);
     
         if (imc < 18) {
             return this.pesoBajo;
