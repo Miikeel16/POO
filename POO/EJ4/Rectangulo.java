@@ -52,8 +52,8 @@ public class Rectangulo {
         }
         public static int getNumeroDeRectangulos(){
             return numeroDeRectangulos;
-    }
-    public String toString() {
-        return "Nombre: " + nombre + ", Coordenadas: (" + x1 + ", " + y1 + ") - (" + x2 + ", " + y2 + ")"+", Superficie: " + calcularSuperficie() + ", Perímetro: " + calcularPerimetro();
-    }
+        }
+        public String toString() {
+            return "Nombre: " + nombre + ", Coordenadas: (" + x1 + ", " + y1 + ") - (" + x2 + ", " + y2 + ")"+", Superficie: " + calcularSuperficie() + ", Perímetro: " + calcularPerimetro();
+        }
 }
