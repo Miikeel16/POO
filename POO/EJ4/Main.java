@@ -12,7 +12,7 @@ public class Main {
         System.out.println(r1);
         System.out.println(r2);
         System.out.println(r3);
-        
+
         System.out.println("Total de rectángulos creados: " + Rectangulo.getNumeroDeRectangulos());
     }
 }
