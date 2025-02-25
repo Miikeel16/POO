@@ -16,8 +16,8 @@ public class Rectangulo {
         public Rectangulo(){
             this.x1=0;
             this.y1=0;
-            this.x2=1;
-            this.y2=1;
+            this.x2=0;
+            this.y2=0;
         }
         public Rectangulo(double px1, double py1, double px2, double py2){
             this.x1=px1;
