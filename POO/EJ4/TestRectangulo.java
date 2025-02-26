@@ -23,7 +23,7 @@ public class TestRectangulo {
     }
     @Test
     public void testNumeroDeRectangulos(){
-        assertTrue(rectangulo.getNumeroDeRectangulos() > 0);
+        assertTrue(Rectangulo.getNumeroDeRectangulos() > 0);
     }
 
 }
