@@ -6,9 +6,9 @@ public class Rectangulo {
     private double x2;
     private double y2;
     private static int numeroDeRectangulos = 0;
-        private String nombre;
-        private String nombreDeLaFigura="Rectangulo";
-        private static double PI=3.1416;
+    private String nombre;
+    private String nombreDeLaFigura="Rectangulo";
+    private static double PI=3.1416;
     
     
         /////////////CONSTRUCTORES///////
