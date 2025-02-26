@@ -41,7 +41,7 @@ public class Persona{
     ///////////////////METODOS///////////////
     private String generaDNI(){
             Random random = new Random();
-            int numero = random.nextInt(90000000);
+            int numero = random.nextInt(90000000) + 10000000;
             int letra=numero%23;
             char letraDni = 0;
             if (letra == 0) {

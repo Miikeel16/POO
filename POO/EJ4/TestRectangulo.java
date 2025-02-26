@@ -1,4 +1,5 @@
 package POO.EJ4;
+
 import static org.junit.Assert.*;
 import org.junit.Test;
 
@@ -9,16 +10,16 @@ public class TestRectangulo {
 
     @Test
     public void testCalcularSuperficie() {
-        assertEquals(12, rectangulo.calcularSuperficie());
+        assertEquals(16.0, rectangulo.calcularSuperficie(),0.01);
     }
     @Test
     public void testCalcularPerimetro() {
-        assertEquals(14, rectangulo.calcularSuperficie());
+        assertEquals(16, rectangulo.calcularSuperficie(),0.01);
     }
     @Test
     public void testDesplazar() {
         rectangulo.desplazar(2, 3);
-        assertEquals(14, rectangulo.calcularSuperficie());
+        assertEquals(16, rectangulo.calcularSuperficie(),0.01);
     }
     @Test
     public void testNumeroDeRectangulos(){

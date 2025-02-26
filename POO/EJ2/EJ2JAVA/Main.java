@@ -25,7 +25,7 @@ public class Main{
 
         persona3.setNombre("MIKEL");
         persona3.setEdad(18);
-        persona3.setDni("637483921K");
+        persona3.setDni("63748392K");
         persona3.setSexo("H");
         persona3.setPeso(70);
         persona3.setAltura(181);
