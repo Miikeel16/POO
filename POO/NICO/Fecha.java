@@ -44,7 +44,7 @@ public class Fecha{
     public static boolean esBisiesto(int anio) {
         return (anio % 4 == 0 && anio % 100 != 0) || (anio % 400 == 0);
     }
-    public static String bisiestoSiNo(int anio){
+    public static void bisiestoSiNo(int anio){
         if (esBisiesto(anio)){
             System.out.println("Es bisiesto");
         }else{
