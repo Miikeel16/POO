@@ -1,4 +1,4 @@
-package POO.EJ2.EJ2JAVA;
+package POO.EJ2;
 import java.util.Scanner;
 
 public class Main{

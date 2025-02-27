@@ -13,13 +13,17 @@ public class Producto {
         this.impuesto=pimpuesto;
     }
     public double calcularPrecioFinal(){
-        double impuestos=this.precioBase*this.impuesto/100;
-        double precioFinal=this.precioBase+this.impuesto;
-        double descuento=precioFinal*5/100;
-        if (precioFinal < 500){
-            return precioFinal;
+        if (this.precioBase>0) {
+            double impuestos=this.precioBase*this.impuesto/100;
+            double precioFinal=this.precioBase+impuestos;
+            if (precioFinal <= 500){
+                return precioFinal;
+            }else{
+                double descuento=precioFinal*5/100;
+                return precioFinal-descuento;
+            }
         }else{
-            return precioFinal-descuento;
+            return this.precioBase;
         }
 
     }

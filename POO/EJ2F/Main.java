@@ -5,6 +5,6 @@ public class Main {
         Producto p1 = new Producto("Coche", 14000, 21);
 
         System.out.println("Nombre del producto: "+p1.getNombre());
-        System.out.println("Precio del producto: "+p1.getPrecioBase());
+        System.out.println("Precio final del producto: "+p1.calcularPrecioFinal());
     }
 }
