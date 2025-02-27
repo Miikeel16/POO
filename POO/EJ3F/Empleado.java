@@ -32,7 +32,7 @@ public class Empleado {
     }
 
     public int getAñosTrabajados() {
-        return añosTrabajados;
+        return this.añosTrabajados;
     }
 
     public void setAñosTrabajados(int pañosTrabajados) {
@@ -40,7 +40,7 @@ public class Empleado {
     }
 
     public String getNombre() {
-        return nombre;
+        return this.nombre;
     }
 
     public void setNombre(String pnombre) {
@@ -48,7 +48,7 @@ public class Empleado {
     }
 
     public double getSalarioBase() {
-        return salarioBase;
+        return this.salarioBase;
     }
 
     public void setSalarioBase(double psalarioBase) {

@@ -8,4 +8,8 @@ public class TestProducto {
     public void testCalcularPrecioFinal(){
         assertEquals(16093.0, producto.calcularPrecioFinal(), 0.01);
     }
+    @Test
+    public void testNoCalcularPrecioFinal(){
+        assertNotEquals(15093.0, producto.calcularPrecioFinal(), 0.01);
+    }
 }
