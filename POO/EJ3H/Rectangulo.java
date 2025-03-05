@@ -1,11 +1,11 @@
 package POO.EJ3H;
 
 public class Rectangulo extends Figura {
-    private double radio;
-    private double ancho;
-    private double alto;
-    private double base;
-    private double altura;
+    private final double radio;
+    private final double ancho;
+    private final double alto;
+    private final double base;
+    private final double altura;
 
     public Rectangulo(double pradio, double pancho, double palto, double pbase, double paltura){
         this.radio=pradio;
