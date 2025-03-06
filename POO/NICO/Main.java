@@ -2,22 +2,26 @@ package POO.NICO;
 
 public class Main{
     public static void main(String[] args) {
-        Fecha f1 = new Fecha();
-        Fecha f2 = new Fecha(31,07,2024);
-        Fecha f3 = new Fecha(2006);
-        Fecha f4 = new Fecha(12,2024);
-
-        f1.mostrarFecha();
-        f1.next();
-        f1.mostrarFecha();
-        
-        f2.mostrarFecha();
-        f3.mostrarFecha();
-        f4.mostrarFecha();
 
         Fecha hoy = new Fecha();
 
-        hoy.setNow();
-        hoy.mostrarFecha();
+        // int cont=0;
+        // while (cont <365) {
+        //     f1.mostrarFecha();
+        //     f1.next();
+        //     cont++;
+        // }
+
+        // hoy.setNow();
+        // int valor;
+        // valor = hoy.valueOf();
+        // hoy.mostrarFecha();
+        // System.out.println("El valor es: "+valor);
+        // hoy.valueOf();
+
+        // System.out.println(hoy.toString());
+
+        hoy.parseInt(20021225);
+        System.out.println(hoy);
     }
 }
