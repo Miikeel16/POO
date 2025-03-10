@@ -10,15 +10,7 @@ public class JugadorCSGO extends Jugador {
         System.out.println("Nombre: "+this.nombre+", Nacionalidad: "+this.nacionalidad+", Nombre Equipo: "+this.nombreEquipo+", Categora: "+this.categoria+", Torneos Ganados: "+this.torneosGanados+", Puntos Ranking: "+this.puntosRanking+", Precision: "+this.precision+"%.");
     }
     public void ganarTorneo(int ppuntos){
-        int cont=0;
-        if (this.torneosGanados>0){
-            while(cont<this.torneosGanados){
-                this.puntosRanking= this.puntosRanking+ppuntos;
-                cont++;
-            }
-        }else{
-            this.puntosRanking=0;
-        }
+        super.ganarTorneo(ppuntos);
     }
     public void subirNivel(){
         if (this.categoria=="Unranked"){

@@ -90,4 +90,35 @@ public class Fecha{
         pm=(valor%10000)/100;
         this.d=pd;this.m=pm;this.a=pa;
     }
+    public boolean FechaValida(int pD, int pM, int pA){
+        int listitems[]= {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
+        if (esBisiesto(pA)){
+            listitems[1]=29;
+        }
+        if (((pM>0) && (pM<=12)) && ((pD>=0) && (pD<=listitems[pM-1]))){
+            return true;
+        }else{
+            return false;
+        }
+    }
+    public boolean FechaValida(){
+        int listitems[]= {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
+        if (esBisiesto(this.a)){
+            listitems[1]=29;
+        }
+        if (((this.m>0) && (this.m<=12)) && ((this.d>=0) && (this.d<=listitems[this.m-1]))){
+            return true;
+        }else{
+            return false;
+        }
+    }
+    // public static boolean esFechaValida(int d, int m, int a){
+    //     if (d>diaMaxMes(m,a)||d<1) { 
+    //         return (false);
+    //     }
+    //     if (m>12||m<1) {
+    //         return (false);
+    //     }
+    //     return(true);
+    // }
 }
