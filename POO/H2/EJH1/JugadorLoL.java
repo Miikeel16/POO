@@ -8,15 +8,7 @@ public class JugadorLoL extends Jugador {
         this.rolPrincipal=prolPrincipal;
     }
     public void ganarTorneo(int ppuntos){
-        int cont=0;
-        if (this.torneosGanados>0){
-            while(cont<this.torneosGanados){
-                this.puntosRanking= this.puntosRanking+ppuntos;
-                cont++;
-            }
-        }else{
-            this.puntosRanking=0;
-        }
+        super.ganarTorneo(ppuntos);
     }
     public void subirNivel(){
         if (this.categoria=="Unranked"){

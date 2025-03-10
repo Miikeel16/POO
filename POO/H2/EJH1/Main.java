@@ -1,11 +1,16 @@
 package POO.H2.EJH1;
 
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
+        Scanner teclado = new Scanner(System.in);
+        
+        teclado.close();
         JugadorLoL lol = new JugadorLoL("Faker", "China", "T1", 6, 22, "Jungla");
         JugadorCSGO csgo = new JugadorCSGO("Staxx", "España", "Heretics", 3, 30, 70);
         JugadorFIFA fifa = new JugadorFIFA("DjMariio", "España", "DuxGaming", 1, 17, 8);
-        JugadorValorant valorant = new JugadorValorant("Mixwell", "España", "Heretics", 4, 33, "Gecko");
+        JugadorValorant valorant = new JugadorValorant("Mixwell", "España", "Heretics", 4, 33,"Gecko");
 
         System.out.print("Jugador de LoL: ");
         lol.mostrarInfo();

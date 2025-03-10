@@ -17,6 +17,12 @@ public abstract class Jugador {
         this.puntosRanking=ppuntosRanking;
         this.categoria="Unranked";
     }
+    public void ganarTorneo(int ppuntos){
+        this.puntosRanking=this.puntosRanking + ppuntos;
+    }
+    public abstract void mostrarInfo();
+    public abstract void subirNivel();
+
     public String getNombre() {
         return this.nombre;
     }
