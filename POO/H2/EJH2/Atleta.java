@@ -57,4 +57,16 @@ public class Atleta {
             this.medallasGanadas++;
         }
     }
+    public void mejorarMarca(double pnuevaMarca){
+        double mejorMarca=0;
+        if (pnuevaMarca>mejorMarca){
+            mejorMarca=pnuevaMarca;
+            System.out.println("Nueva mejor marca: "+mejorMarca);
+        }else{
+            System.out.println("Marca no superada: "+mejorMarca);
+        }
+    }
+    public void cambiarDisciplina(String pnuevaDisciplina){
+        this.disciplina=pnuevaDisciplina;
+    }
 }

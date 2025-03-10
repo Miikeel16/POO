@@ -16,4 +16,10 @@ public class AtletaGimnasia extends Atleta {
     public void ganarMedalla(String ptipo){
         super.ganarMedalla(ptipo);
     }
+    public void mejorarMarca(double pnuevaMarca){
+        super.mejorarMarca(pnuevaMarca);
+    }
+    public void cambiarDisciplina(String pnuevaDisciplina){
+        super.cambiarDisciplina(pnuevaDisciplina);
+    }
 }
