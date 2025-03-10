@@ -20,6 +20,7 @@ public abstract class Jugador {
     public void ganarTorneo(int ppuntos){
         this.puntosRanking=this.puntosRanking + ppuntos;
     }
+    public abstract void mostrarInfo();
     public abstract void subirNivel();
 
     public String getNombre() {
