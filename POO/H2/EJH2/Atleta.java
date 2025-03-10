@@ -68,5 +68,6 @@ public class Atleta {
     }
     public void cambiarDisciplina(String pnuevaDisciplina){
         this.disciplina=pnuevaDisciplina;
+        System.out.println("Nueva disciplina añadida: "+this.disciplina);
     }
 }
